@@ -33,8 +33,8 @@ function getUserChoice(value) {
 function decideWinner(cpuVal, userVal) {
   if (cpuVal === userVal) return "Draw!";
   return  winningConditions[cpuVal].winsAgainst === userVal
-      ? "You lose!"
-      : "You win!";
+      ? "You Lose!"
+      : "You Win!";
 }
 
 function playRPS(choice) {
