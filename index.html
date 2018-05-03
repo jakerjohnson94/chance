@@ -1,33 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Jake Johnson - Game of Chance</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
     <style>
-     
-    
     </style>
 </head>
+<header> <h1>Make a Selection</h1></header>
 <body>
-  <div class="wrap">
-      <div class="button-wrapper">
-    <button onclick='playRPS("rock")'>  Rock  </button>
+    <div class="wrap">
+        <div class="button-wrapper">
+            
+            <button id="rockBtn" onclick='playRPS("rock")'>
+                <p> Rock </p>
+            </button>
 
-    <button onclick='playRPS("paper")'>  Paper </button>
+            <button id="paperBtn" onclick='playRPS("paper")'>
+                <p> Paper </p>
+            </button>
 
-    <button onclick='playRPS("scissors")'>   Scissors </button>
-</div>
-    <div class="wrap2">
-    <div id="userOut"></div>
-    <div id="cpuOut"> </div>
-</div>
-    <div id="output"></div>
+            <button id="scissorsBtn"onclick='playRPS("scissors")'>
+                <p> Scissors </p>
+            </button>
+        </div>
+        <div class="wrap2">
+            <div id="userOut"></div>
+            <div id="cpuOut"> </div>
+        </div>
+        <div class="outputWrap">
+            <div id="output"></div>
 
-
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>

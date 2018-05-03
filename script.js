@@ -41,14 +41,16 @@ function playRPS(choice) {
   const cpuChoice = getCpuChoice();
 
   const userChoice = getUserChoice(choice);
-  console.log("cpu: " + cpuChoice + " -- usr: " + userChoice);
   const winner = decideWinner(cpuChoice, userChoice);
-  console.log(winner);
   outputMsg.textContent = winner;
-  userMsg.textContent = `You chose: ${userChoice} `;
-  cpuMsg.textContent = `The Computer chose: ${cpuChoice} `
+  userMsg.textContent = `You Chose: ${capitalizeFirstLetter(userChoice)} `;
+  cpuMsg.textContent = `The CPU Chose: ${capitalizeFirstLetter(cpuChoice)} `
   output.appendChild(outputMsg);
   userOut.appendChild(userMsg);
   cpuOut.appendChild(cpuMsg);
 
+}
+
+function capitalizeFirstLetter(str){
+   return str.charAt(0).toUpperCase()+str.slice(1)
 }
